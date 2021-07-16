@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>守屋塾 - お問い合わせ</title>
+        <meta name="description" content="名古屋・車道にある、個別指導の守屋塾です。">
+
+        <!-- css -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="./css/contact.css" rel="stylesheet">
+
+        <!-- js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
+    </head>
+
+    <body>
+        <header class="page-header">
+            <h1>守屋塾</h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" rel="noopener noreferrer">ホーム</a></li>
+                    <li><a href="about.html" rel="noopener noreferrer">当塾について</a></li>
+                    <li><a href="guide.html" rel="noopener noreferrer">入塾案内</a></li>
+                    <li><a href="class.html" rel="noopener noreferrer">授業紹介</a></li>
+                    <li><a href="teacher.html" rel="noopener noreferrer">講師紹介</a></li>
+                    <li><a href="index.html#access" rel="noopener noreferrer">アクセス</a></li>
+                    <li><a href="contact.html" rel="noopener noreferrer">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="nav-open" id="nav-sp-open">
+              <img src="./images/menu.svg" alt="">
+            </div>
+            <div class="nav-sp" id="nav-sp">
+              <div class="nav-sp-header">
+                <h1 class="nav-sp-header-logo">守屋塾</h1>
+                <div class="nav-sp-header-close" id="nav-sp-close">
+                  <img src="./images/close.svg" alt="">
+                </div>
+              </div>
+              <div class="nav-sp-wrapper">
+                <ul class="nav-sp-list">
+                  <div class="nav-sp-list-wrapper">
+                    <li class="nav-sp-list-item"><a class="nav-sp-list-item-link" href="index.html" rel="noopener noreferrer">ホーム</a></li>
+                    <li class="nav-sp-list-item"><a class="nav-sp-list-item-link" href="about.html" rel="noopener noreferrer">当塾について</a></li>
+                    <li class="nav-sp-list-item"><a class="nav-sp-list-item-link" href="guide.html" rel="noopener noreferrer">入塾案内</a></li>
+                    <li class="nav-sp-list-item"><a class="nav-sp-list-item-link" href="class.html" rel="noopener noreferrer">授業紹介</a></li>
+                  </div>
+                  <div class="nav-sp-list-wrapper">
+                    <li class="nav-sp-list-item"><a class="nav-sp-list-item-link" href="teacher.html" rel="noopener noreferrer">講師紹介</a></li>
+                    <li class="nav-sp-list-item"><a class="nav-sp-list-item-link" href="index.html#access" rel="noopener noreferrer">アクセス</a></li>
+                    <li class="nav-sp-list-item"><a class="nav-sp-list-item-link" href="contact.html" rel="noopener noreferrer">お問い合わせ</a></li>
+                  </div>
+                </ul>
+                <div class="nav-sp-footer">
+                  <p class="nav-sp-footer-address">〒461-0003 愛知県名古屋市東区筒井3丁目26-27 池尾ビル6A/6B/5A</p>
+                  <div class="nav-sp-footer-number">
+                    <p class="nav-sp-footer-number-text">tel: 052-936-9825</p>
+                    <p class="nav-sp-footer-number-text">fax: 052-936-9833</p>
+                  </div>
+                  <p class="nav-sp-footer-copyright">© 2021 MORIYA academy All Right Reserved.</p>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <section class="title">
+          <h2 class="title-text">入塾に関するお問い合わせ</h2>
+          <a class="other-link" href="#other">その他のお問い合わせはこちらから</a>
+        </section>
+
+        <div class="contact-container">
+          <div class="wrapper">
+              <form action="mailto:info@moriya-jyuku.com" method="post" enctype="text/plain">
+                  <div>
+                      <label for="student-name">生徒氏名（*必須）</label>
+                      <input type="text" id="student-name" name="your-name">
+                  </div>
+                  <div>
+                      <label for="parent-name">保護者氏名</label>
+                      <input type="text" id="student-name" name="your-parent-name">
+                  </div>
+                  <div>
+                      <label for="school-or-job">生徒の学校名または職業</label>
+                      <input type="text" id="school-or-job" name="your-school-or-job">
+                  </div>
+                  <div>
+                      <label for="email">メールアドレス（*必須）</label>
+                      <input type="text" itemref="email" name="your-email">
+                  </div>
+                  <div>
+                      <label for="phone">電話番号（*必須）</label>
+                      <input type="tel" itemref="phone" name="your-phone">
+                  </div>
+                  <div>
+                      <label for="select">お問い合わせ項目（*必須）</label>
+                      <select name="option" size="1">
+                          <option selected="selected">こちらよりお選びください</option>
+                          <option value="under10">入塾について</option>
+                          <option value="20-29">春期/夏期/冬期講習について</option>
+                          <option value="30-39">特別講演について</option>
+                          <option value="over40">茶和会について</option>
+                      </select>
+                  </div>
+                  <div>
+                      <label for="message">お問い合わせ内容（*必須）</label>
+                      <textarea id="message" name="your-message"></textarea>
+                  </div>
+                  <div>
+                      <label><input type="checkbox" name="checkbox" value="check">入力内容に問題なければチェック</label>
+                  </div>
+                  <label><input type="submit" class="button" value="送信"></label>
+              </form>
+          </div>
+
+          <section class="other" id="other">
+              <h3 class="title2">その他のお問い合わせ</h3>
+              <p class="others">電話やメール、お問い合わせフォームより受付しております。</p>
+              <p class="others">お気軽にお問い合わせください。</p><br>
+              <p class="others">■電話</p>
+              <p class="others"><a href="tel:0529369825">052-936-9825</a></p>
+              <p class="others">■メール</p>
+              <p class="others">info@moriya-jyuku.com</p>
+          </section>
+
+          <div class="wrapper2">
+              <form action="mailto:info@moriya-jyuku.com" method="post" enctype="text/plain">
+                  <div>
+                      <label for="student-name">氏名（*必須）</label>
+                      <input type="text" id="student-name" name="your-name">
+                  </div>
+                  <div>
+                      <label for="email">メールアドレス（*必須）</label>
+                      <input type="text" itemref="email" name="your-email">
+                  </div>
+                  <div>
+                      <label for="phone">電話番号（*必須）</label>
+                      <input type="tel" itemref="phone" name="your-phone">
+                  </div>
+                  <div>
+                      <label for="message">お問い合わせ内容（*必須）</label>
+                      <textarea id="message" name="your-message"></textarea>
+                  </div>
+                  <div>
+                      <label><input type="checkbox" name="checkbox" value="check">入力内容に問題なければチェック</label>
+                  </div>
+                  <label><input type="submit" class="button" value="送信"></label>
+              </form>
+          </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p class="foot1">守屋塾</p>
+                <nav class="footer-nav">
+                    <ul class="foot-nav">
+                        <li><a href="index.html" rel="noopener noreferrer">ホーム</a></li>
+                        <li><a href="about.html" rel="noopener noreferrer">当塾について</a></li>
+                        <li><a href="guide.html" rel="noopener noreferrer">入塾案内</a></li>
+                        <li><a href="class.html" rel="noopener noreferrer">授業紹介</a></li>
+                        <li><a href="teacher.html" rel="noopener noreferrer">講師紹介</a></li>
+                        <li><a href="index.html#access" rel="noopener noreferrer">アクセス</a></li>
+                        <li><a href="contact.html" rel="noopener noreferrer">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <p class="foot2-1">〒461-0003&emsp;愛知県名古屋市東区筒井3丁目26-27&emsp;池尾ビル6A/6B/5A</p>
+                <p class="foot2-2">tel：052-936-9825&emsp;fax：052-936-9833</p>
+                <p class="foot3"><small>&copy; 2021 MORIYA academy All Right Reserved.</small></p>
+            </div>
+        </footer>
+    </body>
+</html>

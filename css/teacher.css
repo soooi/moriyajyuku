@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/*teachers*/
+.teachers-section {
+  width: 1200px;
+  max-width: calc(100% - 128px);
+  margin: 0 auto;
+}
+h3 {
+  font-size: 26px;
+  font-weight: lighter;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+.teachers{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1140px) {
+  .teachers-section {
+    max-width: calc(100% - 64px);
+  }
+}
+@media screen and (max-width: 540px) {
+  .teachers-section {
+    max-width: calc(100% - 48px);
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/*koushi*/ /*koushiimg*/ /*koushiname*/ /*koushiuni*/ /*koushisub*/
+.koushi {
+  padding: 16px;
+  margin-bottom: 40px;
+  width: calc(100% / 3);
+  color: rgb(71, 71, 71);
+}
+.koushiimg {
+    width: 100%;
+    margin-bottom: 28px;
+}
+.koushiname {
+  margin-bottom: 12px;
+  font-size: 27px;
+  font-weight: lighter;
+  margin-left: 0%;
+  color: rgb(71, 71, 71);
+}
+.koushiuni {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: lighter;
+  margin-left: 0%;
+  color: rgb(71, 71, 71);
+}
+.koushisub {
+  font-size: 14px;
+  font-weight: lighter;
+  margin-left: 0%;
+  color: rgb(71, 71, 71);
+}
+@media screen and (max-width: 840px) {
+  .koushi {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 540px) {
+  .koushi {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .koushiname {
+    font-size: 14px;
+  }
+  .koushiuni {
+    font-size: 14px;
+  }
+}

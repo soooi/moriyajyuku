@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+h4 {
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+/*home-content*/ /*home*/
+.home-section {
+  margin-top: 113px;
+}
+.home-content {
+    text-align: left;
+    font-weight: lighter;
+}
+.home-img {
+  height: 687px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../images/home.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+.home-description {
+  padding: 96px 0;
+  width: 1200px;
+  max-width: calc(100% - 128px);
+  margin: 0 auto;
+}
+.home-content h2 {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.home-content p {
+    font-size: 43px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1140px) {
+  .home-description {
+    max-width: calc(100% - 64px);
+  }
+}
+@media screen and (max-width: 840px) {
+  .home-img {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .home-description h2 {
+    font-size: 20px;
+  }
+  .home-description p {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .home-img {
+    height: 450px;
+  }
+}
+
+/*button1*/ /*button2*/ /*buttonposition1*/
+.buttonposition1 {
+    display: flex;
+    margin-top: 40px;
+}
+.button {
+    display: block;
+    font-size: 18px;
+    background: white;
+    color: rgb(83, 83, 83);
+    border-style: solid;
+    border-width: 1px;
+    width: 160px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    margin-right: 16px;
+}
+.button:hover {
+    background: rgb(83, 83, 83, 0.2);
+}
+@media screen and (max-width: 540px) {
+  .buttonposition1 {
+    flex-direction: column;
+  }
+  .button {
+    /* margin-right: 0; */
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/*teachers*/
+.teachers-section {
+  padding: 64px 0px;
+  width: 1200px;
+  max-width: calc(100% - 128px);
+  margin: 0 auto 40px;
+}
+h3 {
+    font-size: 26px;
+    font-weight: lighter;
+    margin: 0 16px 32px;
+}
+.teachers {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1140px) {
+  .teachers-section {
+    padding: 32px 0;
+    max-width: calc(100% - 64px);
+  }
+}
+@media screen and (max-width: 840px) {
+  .teachers {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 540px) {
+  .teachers-section {
+    margin: 0px 24px 0px;
+    max-width: calc(100% - 48px);
+  }
+  .teachers {
+    flex-direction: column;
+  }
+}
+
+/*koushi*/ /*koushiimg*/ /*koushiname*/ /*koushiuni*/ /*koushisub*/
+.koushi {
+  width: calc(100% / 3);
+  padding: 16px
+}
+.koushiimg {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.koushiname {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+.koushiuni {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+}
+.koushisub {
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+@media screen and (max-width: 840px) {
+  .koushi {
+    width: calc(100% / 2);
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .koushi {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .koushiname {
+    font-size: 14px;
+  }
+  .koushiuni {
+    font-size: 14px;
+  }
+  .koushisub {
+    font-size: 14px;
+  }
+}
+
+/*buttonposition2*/
+.buttonposition2 {
+  margin: 16px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 540px) {
+  .buttonposition2 {
+    margin: 0 24px;
+  }
+}
+
+/*facebook*/ /*fb-page*/
+.facebook {
+  width: 1200px;
+  max-width: calc(100% - 128px);
+  margin: 120px auto 150px;
+}
+.facebook h4 {
+  margin-bottom: 20px;
+}
+.fb-page {
+  max-width: 100%;
+}
+.fb-page iframe {
+  max-width: 100%;
+}
+@media screen and (max-width: 1140px) {
+  .facebook {
+    max-width: calc(100% - 64px);
+  }
+}
+@media screen and (max-width: 540px) {
+  .facebook {
+    max-width: calc(100% - 48px);
+  }
+}
+
+/*class*/ /*huniki*/ /*hunikiimg*/ /*buttonposition3*/ /*button4*/
+.class {
+  width: 1200px;
+  max-width: calc(100% - 128px);
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.class h4 {
+  margin-bottom: 40px;
+}
+.huniki {
+    overflow: hidden; /*画像拡大時にはみ出た部分を隠す*/
+    margin-bottom: 32px;
+}
+.hunikiimg {
+    width: 100%;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+.hunikiimg:hover {
+    transform: scale(1.1,1.1); /*画像の拡大*/
+    cursor: pointer; /*カーソルをポインターにする*/
+}
+.class-comment {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 32px;
+}
+
+.button4 {
+    display: block;
+    width: 314px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    color: rgb(83, 83, 83);
+    border-style: solid;
+    border-width: 1px;
+}
+.button4:hover {
+    background: rgba(82, 81, 81, 0.2);
+}
+@media screen and (max-width: 1140px) {
+  .class {
+    max-width: calc(100% - 64px);
+  }
+}
+@media screen and (max-width: 540px) {
+  .class {
+    max-width: calc(100% - 48px);
+  }
+  .button4 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 751px) {
+  a[href*="tel:"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  }
+  }
+
+

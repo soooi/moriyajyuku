@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*title*/ /*title1*/ /*title2*/ /*line*/
+.scroll {
+  margin-top: -40px;
+  margin-bottom: 120px;
+}
+.scroll-text {
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+.scroll-line {
+  margin-left: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 1px;
+  height: 50px;
+  background-color: black;
+  float: left;
+}
+.scroll-clear-both {
+  clear: both;
+}
+
+@media (min-width: 751px) {
+  a[href*="tel:"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  }
+  }
+
+
+/*flow*/ /*heading*/ /*flowtitle*/ /*titlenumber*/ /*titlename*/ /*titletext*/
+.flow {
+  text-align: center;
+  width: 940px;
+  max-width: calc(100% - 128px);
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+.flow-heading {
+  text-align: left;
+  font-weight: lighter;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 80px;
+}
+.flow-title {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.flow-titlenumber {
+  font-size: 45px;
+  font-weight: lighter;
+}
+.flow-titlename {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.flow-titletext {
+  font-size: 15px;
+  text-align: left;
+  letter-spacing: 0.1em;
+  padding-left: 8px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1140px) {
+  .flow {
+    max-width: calc(100% - 64px);
+  }
+}
+@media screen and (max-width: 540px) {
+  .flow {
+    max-width: calc(100% - 48px);
+  }
+  .flow-heading {
+    font-size: 20px;
+  }
+}

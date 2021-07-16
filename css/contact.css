@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+.other-link {
+  display: block;
+  color: rgb(71, 71, 71);
+  text-decoration: underline;
+  margin-top: 40px;
+}
+.contact-container {
+  width: 800px;
+  max-width: calc(100% - 128px);
+  margin: 0 auto;
+}
+@media screen and (max-width: 1140px) {
+  .contact-container {
+    max-width: calc(100% - 64px);
+  }
+}
+@media screen and (max-width: 540px) {
+  .contact-container {
+    max-width: calc(100% - 48px);
+  }
+}
+
+/*wrapper*/
+.wrapper {
+  text-align: center;
+  margin-bottom: 200px;
+}
+form div {
+    margin-bottom: 14px;
+    margin-top: 20px;
+}
+label {
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: block;
+    color:  rgb(96, 96, 96);
+    text-align: left;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px rgb(201, 201, 201) solid;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+}
+select[name="option"] {
+    width: 100%;
+    padding: 12px;
+    color: rgb(96, 96, 96);
+    border: 1px rgb(201, 201, 201) solid;
+}
+textarea {
+    width: 100%;
+    height: 8rem;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 10px 100px;
+  border: 1px rgb(71, 71, 71) solid;
+}
+input[type="submit"]:hover {
+  background: rgb(204, 204, 204);
+}
+@media screen and (max-width: 540px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+
+/*other*/ /*title2*/ /*others*/
+.other {
+  margin-bottom: 80px;
+}
+h3.title2 {
+  font-size: 45px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: 160px;
+}
+.others {
+  font-weight: lighter;
+  text-align: left;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 540px) {
+  h3.title2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 751px) {
+  a[href*="tel:"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  }
+  }
+
+/*wrapper2*/
+.wrapper2 {
+  text-align: center;
+  margin-bottom: 200px;
+}
